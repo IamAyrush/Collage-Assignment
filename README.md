@@ -4,8 +4,8 @@ An interactive, responsive, and visually appealing web-based quiz application th
 
 ## 🚀 Live Demo
 
-👉 [Try the Quiz](https://your-username.github.io/college-quiz-app/)  
-🔐 [Go to Admin Panel](https://your-username.github.io/college-quiz-app/admin.html) (Password: `admin123`)
+👉 [Try the Quiz](https://iamayrush.github.io/Collage-Assignment/) 
+🔐 [Go to Admin Panel] (Password: `admin123`)
 
 ---
 
