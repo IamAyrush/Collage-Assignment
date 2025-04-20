@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Panel - Quiz Manager</title>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; padding: 20px; max-width: 800px; margin: auto; background: #f8f9fa; }
+    h1 { text-align: center; }
+    input, textarea, button, select {
+      margin: 10px 0; width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px;
+    }
+    .question-block {
+      background: #fff; padding: 15px; border: 1px solid #ddd; border-radius: 8px; margin: 15px 0;
+    }
+    .question-block h3 { margin: 0 0 10px; }
+    .actions { display: flex; justify-content: space-between; gap: 10px; }
+    .actions button { flex: 1; }
+  </style>
+</head>
+<body>
+  <h1>Admin Panel</h1>
+
+  <div id="login-screen">
+    <input type="password" id="admin-password" placeholder="Enter admin password" />
+    <button onclick="authenticate()">Login</button>
+  </div>
+
+  <div id="admin-panel" style="display: none;">
+    <h2>Add New Question</h2>
+    <input type="text" id="new-question" placeholder="Enter question" />
+    <input type="text" id="new-option1" placeholder="Option 1" />
+    <input type="text" id="new-option2" placeholder="Option 2" />
+    <input type="text" id="new-option3" placeholder="Option 3" />
+    <input type="text" id="new-option4" placeholder="Option 4" />
+    <select id="new-answer">
+      <option value="0">Correct Answer: Option 1</option>
+      <option value="1">Correct Answer: Option 2</option>
+      <option value="2">Correct Answer: Option 3</option>
+      <option value="3">Correct Answer: Option 4</option>
+    </select>
+    <button onclick="addQuestion()">➕ Add Question</button>
+
+    <h2>Existing Questions</h2>
+    <div id="question-list"></div>
+  </div>
+
+    <script src="admin.js"></script>
+    
+</body>
+</html>
